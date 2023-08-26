@@ -1,1 +1,0 @@
-É necessário o uso do numpy e do Pillow para rodar corretamente o projeto 
