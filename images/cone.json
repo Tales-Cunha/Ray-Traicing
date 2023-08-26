@@ -1,14 +1,14 @@
 {
-    "v_res": 480,
-    "h_res": 640,
-    "square_side": 0.1,
-    "dist": 100.0,
+    "width_res": 480,
+    "height_res": 640,
+    "pixel_size": 0.1,
+    "distance": 100.0,
     "eye": [
         -500.0,
         -300.0,
         -175.0
     ],
-    "look_at": [
+    "look_at_cam": [
         0.0,
         0.0,
         -25.0
