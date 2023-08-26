@@ -4,7 +4,7 @@ import argparse
 import json
 import os
 
-def cli() -> str:  ### vai retornar uma string 
+def comandLine() -> str:  ### vai retornar uma string 
     p = argparse.ArgumentParser(description="A simple CLI for the program")
     p.add_argument("-f", "--file", type = str, help="EScreva o nome do arquivo", required=True)
 
@@ -21,6 +21,6 @@ def read_json(_file: str) -> dict:
     return _data
 
 if __name__ == "__main__":
-    arq = cli()
+    arq = comandLine()
     data = read_json(arq)
     

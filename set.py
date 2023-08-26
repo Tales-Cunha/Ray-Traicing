@@ -1,5 +1,3 @@
-from modules.operations import Vector
-
 
 class Set:
     def __init__(self,dict_) -> None:
