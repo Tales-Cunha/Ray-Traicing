@@ -8,9 +8,11 @@ public:
 
     Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z) {}
 
-    Vector add(const Vector &other) const
+    void getCoordinates(double &xOut, double &yOut, double &zOut) const
     {
-        return Vector(x + other.x, y + other.y, z + other.z);
+        xOut = x;
+        yOut = y;
+        zOut = z;
     }
 
     double dot(const Vector &other) const
@@ -42,10 +44,39 @@ public:
             return *this;
         }
     }
+
+    Vector operator+(const Vector &other) const
+    {
+        return Vector(x + other.x, y + other.y, z + other.z);
+    }
+
+    Vector operator-(const Vector &other) const
+    {
+        return Vector(x - other.x, y - other.y, z - other.z);
+    }
+
+    Vector operator*(double scalar) const
+    {
+        return Vector(x * scalar, y * scalar, z * scalar);
+    }
+
+    Vector operator/(double scalar) const
+    {
+        return Vector(x / scalar, y / scalar, z / scalar);
+    }
+
+    bool Vector::operator==(const Vector &other) const
+    {
+        return x == other.x && y == other.y && z == other.z;
+    }
+
+    bool Vector::operator!=(const Vector &other) const
+    {
+        return !(*this == other);
+    }
 };
 
 int main()
 {
-
     return 0;
 }
