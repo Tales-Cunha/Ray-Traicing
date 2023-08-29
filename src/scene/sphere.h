@@ -4,6 +4,7 @@
 #include "../scene/color.h"
 #include "../point/point.h"
 
+#include "../scene/color.h"
 class Sphere {
 public:
     Point center = Point(0, 0, 0);
@@ -25,7 +26,8 @@ public:
         float _reflectionCoefficient,
         float _transmissionCoefficient,
         float _rugosityCoefficient);
-
+    
+    double intercept (Point &point,Vector &vector);
 };
 
 #endif /* SPHERE_H */

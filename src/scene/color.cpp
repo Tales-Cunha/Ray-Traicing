@@ -24,9 +24,9 @@ float Color::truncateValue(float &value)  {
     return value;
 }
 
-int main() {
-    Color color(-1, 230, 134);
-    std::cout << color.red << "\n";
-    std::cout << color.green << "\n";
-    std::cout << color.blue << "\n";
-}
+// int main() {
+//     Color color(-1, 230, 134);
+//     std::cout << color.red << "\n";
+//     std::cout << color.green << "\n";
+//     std::cout << color.blue << "\n";
+// }
